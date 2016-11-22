@@ -1,0 +1,13 @@
+<%= form_for @task do |t| %>
+<%= t.label :name, "Enter a name" %>
+<%= t.text_field :name %>
+<%= t.label :done, "Enter true if done" %>
+<%= t.text_field :done %>
+<%= t.submit %>
+<% end %>
+
+<!-- <form action="/tasks/:id" method="patch">
+  <input type="text" name="task[name]" >
+  <input type="text" name="task[done]" placeholder="Done : false" >
+  <input type="submit" value="Edit Task" >
+</form> -->
